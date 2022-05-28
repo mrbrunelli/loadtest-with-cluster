@@ -1,0 +1,17 @@
+{
+    "name": "loadtest-with-cluster",
+    "version": "1.0.0",
+    "description": "Performance example with Node.js Clusters",
+    "main": "index.js",
+    "author": "Matheus R. Brunelli",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "start": "node main.js",
+        "test": "loadtest http://localhost:3000 -n 100 -c 100"
+    },
+    "dependencies": {
+        "express": "^4.18.1",
+        "loadtest": "^5.2.0"
+    }
+}
